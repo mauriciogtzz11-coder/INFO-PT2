@@ -36,7 +36,10 @@
 
 </head>
 
+</head>
+
 <body>
+
 
 <a href="contactos.html" class="corner-btn">
     Contactos
@@ -69,9 +72,6 @@ mediante proyectos, creatividad e innovación tecnológica.
 
 <div class="hero-buttons">
 
-<a href="index.html" class="primary-btn corner-btn"></a>
-Inicio
-</a>
 
 </div>
 
@@ -259,13 +259,73 @@ redes y plataformas online.
 </p>
 
 </div>
+<!-- AGREGAR ESTO JUSTO DESPUÉS DE LA TARJETA DE COMUNIDADES -->
+
+<div class="survey-card-wrapper">
+
+<a href="encuesta.html" class="card">
+
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<div class="card-tag">
+07
+</div>
+
+<h3>
+Encuesta
+</h3>
+
+<p>
+Comparte tus intereses académicos y ayúdanos a conocer mejor a los futuros estudiantes de informática.
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</a>
 
 </a>
 
 </div>
 
 </section>
+<script>
 
+window.addEventListener('scroll', () => {
+
+    sessionStorage.setItem(
+        'indexScrollPosition',
+        window.scrollY
+    );
+
+});
+
+window.addEventListener('load', () => {
+
+    const savedPosition =
+    sessionStorage.getItem(
+        'indexScrollPosition'
+    );
+
+    if(savedPosition){
+
+        window.scrollTo(
+            0,
+            parseInt(savedPosition)
+        );
+
+    }
+
+});
+
+</script>
 </body>
 
 </html>

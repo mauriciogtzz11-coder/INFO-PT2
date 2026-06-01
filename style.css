@@ -9,7 +9,7 @@
 }
 
 html{
-    scroll-behavior:smooth;
+    scroll-behavior:auto;
 }
 
 body{
@@ -780,15 +780,3 @@ body{
     }
 }
 
-.corner-btn{
-
-    position:fixed;
-
-    top:20px;
-
-    right:20px;
-
-    left:auto;
-
-    z-index:9999;
-}
