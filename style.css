@@ -779,3 +779,16 @@ body{
         height:220px;
     }
 }
+
+.corner-btn{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    left:auto;
+
+    z-index:9999;
+}
